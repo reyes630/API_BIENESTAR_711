@@ -14,10 +14,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "reyesapi",
+    "password": "wAAf0xlqakLSeGSF8eSPn3HiJngSIMqL",
+    "database": "db_api_mibienestar",
+    "host": "dpg-d2k9gqbe5dus73909630-a",
+    "dialect": "postgres"
   }
 }

@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     description: DataTypes.TEXT,
     startDate: DataTypes.DATE,
     endDate: DataTypes.DATE,
-    state: DataTypes.ENUM,
+    state: DataTypes.ENUM('Activo', 'Inactivo'),
     maxCapaciy: DataTypes.INTEGER,
     categoryId: DataTypes.INTEGER,
     userId: DataTypes.INTEGER

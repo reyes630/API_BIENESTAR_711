@@ -12,7 +12,7 @@ module.exports = {
 
   async getAll(req, res) {
     try {
-      const data = await events.getAll({
+      const data = await events.findAll({
         include: [
           { model: categories, as: 'category' },
           { model: user, as: 'user' }

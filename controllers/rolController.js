@@ -12,7 +12,7 @@ module.exports = {
 
   async getAll(req, res) {
     try {
-      const data = await rols.getAll();
+      const data = await rols.findAll();
       res.json(data);
     } catch (error) {
       res.status(500).json({ error: error.message });

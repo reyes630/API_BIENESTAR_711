@@ -1,5 +1,12 @@
 const express = require('express');
+const cors = required('cors');
 const app = express();
+
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 // Middleware para interpretar JSON en las peticiones
 app.use(express.json());
@@ -9,6 +16,7 @@ const categoryRoutes = require('./routes/categoryRoutes');
 const eventRoutes = require('./routes/eventRoutes');
 const rolRoutes = require('./routes/rolRoutes');
 const userRoutes = require('./routes/userRoutes');
+const { or } = require('sequelize');
 
 // Usar rutas montadas en sus respectivos endpoints
 app.use('/categories', categoryRoutes);

@@ -25,7 +25,7 @@ module.exports = {
         type: Sequelize.ENUM('pendiente', 'aprobado', 'rechazado'),
         defaultValue: 'pendiente'
       },
-      maxCapaciy: {
+      maxCapacity: {
         type: Sequelize.INTEGER
       },
       categoryId: {
